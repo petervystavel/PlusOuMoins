@@ -2,23 +2,32 @@
 
 using namespace std;
 
-void function() 
+#define DEFAULT "\033[0m"
+#define GREEN "\033[32m"
+#define RED "\033[31m"
+
+void function(int t[500])
 {
-	i++;
 }
 
 int main()
 {
-	int i;
+	int tab[500];
+	function(tab);
 
-	function();
+	int t;
 
-	if (i == 0) 
+	t = 5;
+
+	for (int i = 0; i < 500; i++) 
 	{
-		int j = 3;
-	}
+		tab[i] = 0;
+	} 
 
-	j = 7;
+	for (int i = 0; i < 500; i++)
+	{
+		cout << "[" << tab[i] << "]";
+	}
 
 	return 0;
 }
