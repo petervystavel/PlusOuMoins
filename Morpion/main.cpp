@@ -50,6 +50,86 @@ int GetSymbol(int playerID)
 	return -(playerID + 1);
 }
 
+bool CheckWinOptimized(int cells[TOTAL_SIZE], int playerID, int indexPlayed)
+{
+	bool found = true;
+	int symbol = GetSymbol(playerID);
+	int linePlayed = indexPlayed / SIZE;
+	int columnPlayed = indexPlayed % SIZE;
+	for (int column = 0; column < SIZE; column++)
+	{
+		int index = GetIndex(linePlayed, column);
+		if (cells[index] != symbol)
+		{
+			found = false;
+			break;
+		}
+	}
+
+	if (found)
+		return true;
+
+	for (int line = 0; line < SIZE; line++)
+	{
+		int index = GetIndex(line, columnPlayed);
+		if (cells[index] != symbol)
+		{
+			found = false;
+			break;
+		}
+	}
+
+	if (found)
+		return true;
+
+	//DIAGONAL 1
+	if (columnPlayed == linePlayed)
+	{
+		int line = 0;
+		int column = 0;
+		bool found = true;
+		for (int i = 0; i < SIZE; i++)
+		{
+			int index = GetIndex(line, column);
+			if (cells[index] != symbol)
+			{
+				found = false;
+				break;
+			}
+
+			line++;
+			column++;
+		}
+
+		if (found)
+			return true;
+	}
+
+	//DIAGONAL 2
+	if (columnPlayed + linePlayed == SIZE - 1)
+	{
+		int line = 0;
+		int column = SIZE - 1;
+		bool found = true;
+		for (int i = 0; i < SIZE; i++)
+		{
+			int index = GetIndex(line, column);
+			if (cells[index] != symbol)
+			{
+				found = false;
+				break;
+			}
+
+			line++;
+			column--;
+		}
+
+		if (found)
+			return true;
+	}
+
+}
+
 bool CheckWin(int cells[TOTAL_SIZE], int playerID) 
 {
 	int symbol = GetSymbol(playerID);
@@ -181,7 +261,6 @@ int main()
 			if ((i + 1) % SIZE == 0)
 				cout << endl;
 		}
-
 
 		int index;
 		
