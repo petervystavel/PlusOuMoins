@@ -284,7 +284,7 @@ int main()
 
 		cells[index] = GetSymbol(playerID);
 
-		bool win = CheckWin(cells);
+		bool win = CheckWin(cells, playerID);
 		if (win) 
 		{
 			cout << "Player " << (playerID + 1) << " a gagne" << endl;
