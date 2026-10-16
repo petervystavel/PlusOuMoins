@@ -7,9 +7,13 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlusOuMoins", "PlusOuMoins\
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PFC", "PFC\PFC.vcxproj", "{C48E216B-03DF-475F-AE48-09E7E1805A2A}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test", "Test\Test.vcxproj", "{2169101E-22B7-4E5C-B470-D2DBD2A72916}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Pointeurs", "Test\Test.vcxproj", "{2169101E-22B7-4E5C-B470-D2DBD2A72916}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Morpion", "Morpion\Morpion.vcxproj", "{910F75DF-EBAB-4EDD-A022-081F4E6220EC}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test2", "Test2\Test2.vcxproj", "{498317E1-30A5-4720-A60A-F0AF7439B420}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wordle", "Wordle\Wordle.vcxproj", "{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +55,22 @@ Global
 		{910F75DF-EBAB-4EDD-A022-081F4E6220EC}.Release|x64.Build.0 = Release|x64
 		{910F75DF-EBAB-4EDD-A022-081F4E6220EC}.Release|x86.ActiveCfg = Release|Win32
 		{910F75DF-EBAB-4EDD-A022-081F4E6220EC}.Release|x86.Build.0 = Release|Win32
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Debug|x64.ActiveCfg = Debug|x64
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Debug|x64.Build.0 = Debug|x64
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Debug|x86.ActiveCfg = Debug|Win32
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Debug|x86.Build.0 = Debug|Win32
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Release|x64.ActiveCfg = Release|x64
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Release|x64.Build.0 = Release|x64
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Release|x86.ActiveCfg = Release|Win32
+		{498317E1-30A5-4720-A60A-F0AF7439B420}.Release|x86.Build.0 = Release|Win32
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Debug|x64.ActiveCfg = Debug|x64
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Debug|x64.Build.0 = Debug|x64
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Debug|x86.ActiveCfg = Debug|Win32
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Debug|x86.Build.0 = Debug|Win32
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x64.ActiveCfg = Release|x64
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x64.Build.0 = Release|x64
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x86.ActiveCfg = Release|Win32
+		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
