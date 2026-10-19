@@ -4,6 +4,7 @@ using namespace std;
 
 #define GREEN "\033[32m"
 #define RED "\033[31m"
+#define ORANGE "\033[33m"
 #define DEFAULT "\033[0m"
 
 void Play(const char* word) 
@@ -25,8 +26,48 @@ void Play(const char* word)
 			}
 			else
 			{
+				int misplacedWord = 0;
+				int misplacedGuess = 0;
+				char letter = guess[i];
+
+				for (int j = 0; j < i; j++) 
+				{
+					if (guess[j] == word[j])
+						continue;
+
+					if (word[j] == letter)
+						misplacedWord++;
+
+					if (guess[j] == letter)
+						misplacedGuess++;
+				}
+
+				if (misplacedWord - misplacedGuess > 0) 
+				{
+					cout << ORANGE << guess[i] << DEFAULT;
+					continue;
+				}
+
+				bool found = false;
+				for (int j = i + 1; j < 5; j++) 
+				{
+					if (guess[j] == word[j])
+						continue;
+
+					if (word[j] == letter)
+					{
+						found = true;
+						cout << ORANGE << guess[i] << DEFAULT;
+						break;
+					}
+				}
+
+				if (found == false) 
+				{
+					cout << RED << guess[i] << DEFAULT;
+				}
+
 				win = false;
-				cout << RED << guess[i] << DEFAULT;
 			}
 		}
 
