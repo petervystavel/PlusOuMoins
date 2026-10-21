@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.14.36203.30
+# Visual Studio Version 18
+VisualStudioVersion = 18.10.12217.157 stable
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "PlusOuMoins", "PlusOuMoins\PlusOuMoins.vcxproj", "{0FA95EA7-7042-4C99-99BA-245C5F2B2489}"
 EndProject
@@ -14,6 +14,8 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Test2", "Test2\Test2.vcxproj", "{498317E1-30A5-4720-A60A-F0AF7439B420}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Wordle", "Wordle\Wordle.vcxproj", "{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Demineur", "Demineur\Demineur.vcxproj", "{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -71,6 +73,14 @@ Global
 		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x64.Build.0 = Release|x64
 		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x86.ActiveCfg = Release|Win32
 		{5C0373BE-E991-4BBF-9AD8-91BBEEF3C243}.Release|x86.Build.0 = Release|Win32
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Debug|x64.ActiveCfg = Debug|x64
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Debug|x64.Build.0 = Debug|x64
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Debug|x86.ActiveCfg = Debug|Win32
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Debug|x86.Build.0 = Debug|Win32
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Release|x64.ActiveCfg = Release|x64
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Release|x64.Build.0 = Release|x64
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Release|x86.ActiveCfg = Release|Win32
+		{5FD1AEA9-B26C-4976-9CC1-81DFFF3225BE}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
